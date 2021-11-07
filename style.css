@@ -1,0 +1,198 @@
+/* RESET */
+*, html, body {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #382933;
+}
+
+/* GLOBAL */
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+h1.menu-titulo {
+  color: #9999AA;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+h3, h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+h2 {
+  font-weight: 900;
+}
+a.link {
+  font-size: 2.25rem;
+  color: #2EC1AC;
+  text-decoration: underline;
+}
+
+/* HEADER */
+header {
+  padding-top: 10px;
+  margin-bottom: 60px;
+}
+header nav {
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header nav ul li {
+  margin: 15px;
+}
+header nav ul li#btn-play {
+  margin-right: 0;
+}
+header nav ul li#btn-play a {
+  background: #2EC1AC;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #fff;
+  border-bottom: none;
+}
+header nav ul li a:hover {
+  border-bottom: 3px solid #2EC1AC;
+}
+header nav ul li#btn-play a:hover {
+  background: #38a999;
+  transition: 0.3s;
+}
+header nav ul li a.active {
+  color: #2EC1AC;
+  border-bottom: 3px solid #2EC1AC;
+}
+
+/* HOME */
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+.jogador img {
+  box-shadow: 20px 20px #b91646;
+  border-radius: 5px;
+}
+
+/* SOBRE */
+.sobre {
+  padding-top: 20px;
+}
+.sobre-detalhes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+
+/* MOEDA */
+.moeda .menu-titulo {
+  text-align: right;
+}
+.moeda-detalhes {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 15px;
+}
+.link-play {
+  text-align: center;
+  margin-top: 30px;
+}
+.btn-outline-play {
+  color: #2EC1AC;
+  border: 2px solid #2EC1AC;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.btn-outline-play:hover {
+  background: #2EC1AC;
+  color: #fff;
+  transition: .3s;
+}
+
+/* NEWS */
+.cards {
+  display: flex;
+}
+.noticia-card {
+  width: 500px;
+  height: 260px;
+  box-shadow: 1px 1px 10px #cecece;
+  padding: 20px;
+}
+.noticia-card:nth-child(1) {
+  margin-right: 15px;
+}
+.noticia-titulo {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.noticia-body {
+  position: relative;
+  height: calc(100% - 30px);
+}
+a.noticia-link {
+  position: absolute;
+  color: #2EC1AC;
+  display: block;
+  bottom: 0;
+  right: 0;
+}
+.noticia-ver-mais {
+  text-align: center;
+  margin: 40px 0 50px;
+}
+.noticia-ver-mais a {
+  background: #2EC1AC;
+  padding: 15px 25px;
+  border-radius: 4px;
+  color: #fff;
+}
+.noticia-ver-mais a:hover {
+  background: #38a999;
+  transition: 0.3s;
+}
+
+/* GAME */
+.game {
+  height: 90vh;
+  background: #cecece;
+}
+
+/* FOOTER */
+footer {
+  background: #B91646;
+  height: 330px;
+  text-align: center;
+}
+.redes-sociais {
+  display: flex;
+  padding: 60px;
+  justify-content: center;
+}
+.redes-sociais img {
+  margin:0 5px;
+}
+footer p.copy {
+  margin-top: 20px;
+  color: #fff;
+  opacity: .8;
+}
