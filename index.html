@@ -12,19 +12,19 @@
 </head>
 <body>
   <header>
-    <nav class="container">
+    <nav class="container menu">
       <div><img id="logo" src="./img/logo.png" alt="Logo"></div>
       <ul>
-        <li><a class="active" href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">$Moeda</a></li>
-        <li><a href="">News</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#sobre">About</a></li>
+        <li><a href="#moeda">$Moeda</a></li>
+        <li><a href="#noticias">News</a></li>
         <li><a href="">Marketplace</a></li>
-        <li id="btn-play"><a href="">Play Now</a></li>
+        <li id="btn-play"><a href="#game">Play Now</a></li>
       </ul>
     </nav>
   </header>
-  <div class="container apresentacao">
+  <div id="home" class="container apresentacao">
     <div class="">
       <h1>MOSTRE SUA HABILIDADE</h1>
       <h3>Dispute contra pessoas do mundo inteiro neste jogo em blockchain</h3>
@@ -33,7 +33,7 @@
       <img src="./img/jogador.png" alt="Jogador">
     </div>
   </div>
-  <div class="container sobre">
+  <div id="sobre" class="container sobre">
     <h1 class="menu-titulo">SOBRE</h1>
     <div class="sobre-detalhes">
       <div class="sobre-img">
@@ -45,7 +45,7 @@
       </div>
     </div>
   </div>
-  <div class="container moeda">
+  <div id="moeda" class="container moeda">
     <h1 class="menu-titulo">$MOEDA</h1>
     <div class="moeda-detalhes">
       <div class="moeda-info">
@@ -61,7 +61,7 @@
       <a class="btn-outline-play" href="">PLAY NOW</a>
     </div>
   </div>
-  <div class="container noticias">
+  <div id="noticias" class="container noticias">
     <h1 class="menu-titulo">$NEWS</h1>
     <div class="cards">
       <div class="noticia-card">
@@ -83,7 +83,7 @@
       <a href="">VER MAIS</a>
     </div>
   </div>
-  <div class="game">
+  <div id="game" class="game">
     <h1 class="menu-titulo">$GAME</h1>
   </div>
   <footer>
@@ -96,5 +96,7 @@
     <img src="./img/logo.png" alt="Logo">
     <p class="copy">Nome do Jogo (c) 2021</p>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
