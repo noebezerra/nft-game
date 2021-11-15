@@ -1,46 +1,5 @@
-/* RESET */
-*, html, body {
-  box-sizing: border-box;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #382933;
-}
-
-/* GLOBAL */
-.container {
-  width: 1000px;
-  margin: 0 auto;
-}
-a {
-  text-decoration: none;
-  color: currentColor;
-}
-h1 {
-  font-size: 4rem;
-  font-weight: 900;
-}
-h1.menu-titulo {
-  color: #9999AA;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}
-h3, h2 {
-  font-size: 2.25rem;
-  font-weight: normal;
-}
-h2 {
-  font-weight: 900;
-}
-a.link {
-  font-size: 2.25rem;
-  color: #2EC1AC;
-  text-decoration: underline;
-}
-
 /* HEADER */
-header {
+.menu {
   position: fixed;
   background: #fff;
   width: 100%;
@@ -50,10 +9,10 @@ header {
   align-items: center;
   z-index: 9999;
 }
-header nav {
+.menu nav {
   display: flex;
 }
-header nav ul {
+.menu nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -62,29 +21,29 @@ header nav ul {
   font-weight: bold;
   text-transform: uppercase;
 }
-header nav ul li {
+.menu nav ul li {
   margin: 15px;
 }
-header nav ul li#btn-play {
+.menu nav ul li#btn-play {
   margin-right: 0;
 }
-header nav ul li#btn-play a {
-  background: #2EC1AC;
+.menu nav ul li#btn-play a {
+  background: #2ec1ac;
   padding: 15px 25px;
   border-radius: 4px;
   color: #fff;
   border-bottom: none;
 }
-header nav ul li a:hover {
-  border-bottom: 3px solid #2EC1AC;
+.menu nav ul li a:hover {
+  border-bottom: 3px solid #2ec1ac;
 }
-header nav ul li#btn-play a:hover {
+.menu nav ul li#btn-play a:hover {
   background: #38a999;
   transition: 0.3s;
 }
-header nav ul li a.active {
-  color: #2EC1AC;
-  border-bottom: 3px solid #2EC1AC;
+.menu a.active {
+  color: #2ec1ac;
+  border-bottom: 3px solid #2ec1ac;
 }
 
 /* HOME */
@@ -103,103 +62,110 @@ header nav ul li a.active {
 .sobre {
   padding-top: 20px;
 }
-.sobre-detalhes {
+.sobredetalhes {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 15px;
 }
 
 /* MOEDA */
-.moeda .menu-titulo {
+.moeda h1 {
   text-align: right;
 }
-.moeda-detalhes {
+.moedadetalhes {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 15px;
 }
-.link-play {
+.linkplay {
   text-align: center;
   margin-top: 30px;
 }
-.btn-outline-play {
-  color: #2EC1AC;
-  border: 2px solid #2EC1AC;
+.btnoutlineplay {
+  color: #2ec1ac;
+  border: 2px solid #2ec1ac;
   padding: 15px 30px;
   border-radius: 4px;
   font-weight: bold;
 }
-.btn-outline-play:hover {
-  background: #2EC1AC;
+.btnoutlineplay:hover {
+  background: #2ec1ac;
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 /* NEWS */
 .cards {
   display: flex;
 }
-.noticia-card {
+.noticiacard {
   width: 500px;
   height: 260px;
   box-shadow: 1px 1px 10px #cecece;
   padding: 20px;
 }
-.noticia-card:nth-child(1) {
+.noticiacard:nth-child(1) {
   margin-right: 15px;
 }
-.noticia-titulo {
+.noticiatitulo {
   font-weight: bold;
   margin-bottom: 10px;
 }
-.noticia-body {
+.noticiabody {
   position: relative;
-  height: calc(100% - 30px);
+  height: calc(100% - 40px);
 }
-a.noticia-link {
+a.noticialink {
   position: absolute;
-  color: #2EC1AC;
+  color: #2ec1ac;
   display: block;
   bottom: 0;
   right: 0;
 }
-.noticia-ver-mais {
+.noticiavermais {
   text-align: center;
   margin: 40px 0 50px;
 }
-.noticia-ver-mais a {
-  background: #2EC1AC;
+.noticiavermais a {
+  background: #2ec1ac;
   padding: 15px 25px;
   border-radius: 4px;
   color: #fff;
 }
-.noticia-ver-mais a:hover {
+.noticiavermais a:hover {
   background: #38a999;
   transition: 0.3s;
 }
 
 /* GAME */
 .game {
-  height: 90vh;
+  height: calc(100vh - 120px);
   background: #cecece;
 }
 
 /* FOOTER */
-footer {
-  background: #B91646;
+.footer {
+  background: #b91646;
   height: 330px;
   text-align: center;
 }
-.redes-sociais {
+.redessociais {
   display: flex;
   padding: 60px;
   justify-content: center;
 }
-.redes-sociais img {
-  margin:0 5px;
+.redessociais img {
+  margin: 0 5px;
 }
-footer p.copy {
+.footer p.copy {
   margin-top: 20px;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }

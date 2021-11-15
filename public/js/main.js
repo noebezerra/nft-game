@@ -1,18 +1,20 @@
 const menuItens = document.querySelectorAll('.menu a[href^="#"]');
-menuItens.forEach(item => {
-  item.addEventListener('click', scrollToIdOnClick);
-  item.addEventListener('click', activeMenuClick);
-})
+
+menuItens.forEach((item) => {
+  item.addEventListener("click", scrollToIdOnClick);
+  item.addEventListener("click", activeMenuClick);
+});
 
 function activeMenuClick(event) {
-  const active = document.querySelector('.active');
-  active.classList.remove('active');
+  const active = document.querySelector(".active");
+  console.log;
+  active.classList.remove("active");
   const element = event.target;
-  element.classList.add('active');
+  element.classList.add("active");
 }
 
 function getScrollTopByHref(element) {
-  const id = element.getAttribute('href');
+  const id = element.getAttribute("href");
   return document.querySelector(id).offsetTop;
 }
 
@@ -39,12 +41,13 @@ function smoothScrollTo(endX, endY, duration) {
   const distanceY = endY - startY;
   const startTime = new Date().getTime();
 
-  duration = typeof duration !== 'undefined' ? duration : 400;
+  duration = typeof duration !== "undefined" ? duration : 400;
 
   // Easing function
   const easeInOutQuart = (time, from, distance, duration) => {
-    if ((time /= duration / 2) < 1) return distance / 2 * time * time * time * time + from;
-    return -distance / 2 * ((time -= 2) * time * time * time - 2) + from;
+    if ((time /= duration / 2) < 1)
+      return (distance / 2) * time * time * time * time + from;
+    return (-distance / 2) * ((time -= 2) * time * time * time - 2) + from;
   };
 
   const timer = setInterval(() => {
@@ -56,4 +59,4 @@ function smoothScrollTo(endX, endY, duration) {
     }
     window.scroll(newX, newY);
   }, 1000 / 60); // 60 fps
-};
+}

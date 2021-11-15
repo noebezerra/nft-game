@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #382933;
+  font-size: 14px;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+h1.menutitulo {
+  color: #9999aa;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+h3,
+h2 {
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+h2 {
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+a.link {
+  font-size: 2.25rem;
+  color: #2ec1ac;
+  text-decoration: underline;
+}
