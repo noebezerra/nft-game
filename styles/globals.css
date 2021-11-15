@@ -39,3 +39,7 @@ a.link {
   color: #2ec1ac;
   text-decoration: underline;
 }
+.menu ul li a.active {
+  color: #2ec1ac;
+  border-bottom: 3px solid #2ec1ac;
+}

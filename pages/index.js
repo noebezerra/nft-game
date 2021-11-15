@@ -1,19 +1,24 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Em breve</title>
         <meta name="description" content="Projeto de game NFT" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
           rel="stylesheet"
@@ -21,12 +26,12 @@ export default function Home() {
         <link rel="stylesheet" href="style.css" />
       </Head>
 
-      <div className={styles.menu}>
+      <div className={`menu ${styles.menu}`}>
         <nav className="container">
           <div>
             <img id="logo" src="./img/logo.png" alt="Logo" />
           </div>
-          <ul className="menu">
+          <ul>
             <li>
               <a className="active" href="#home">
                 Home
@@ -44,7 +49,7 @@ export default function Home() {
             <li>
               <a href="">Marketplace</a>
             </li>
-            <li id="btn-play">
+            <li id="btn-play" className={styles.btnplay}>
               <a href="#game">Play Now</a>
             </li>
           </ul>
@@ -155,7 +160,7 @@ export default function Home() {
         <p className="copy">Nome do Jogo (c) 2021</p>
       </footer>
 
-      <script src="./js/main.js"></script>
+      <Script src="./js/main.js"></Script>
     </div>
   );
 }

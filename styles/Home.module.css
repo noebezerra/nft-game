@@ -24,10 +24,10 @@
 .menu nav ul li {
   margin: 15px;
 }
-.menu nav ul li#btn-play {
+.menu nav ul li.btnplay {
   margin-right: 0;
 }
-.menu nav ul li#btn-play a {
+.menu nav ul li.btnplay a {
   background: #2ec1ac;
   padding: 15px 25px;
   border-radius: 4px;
@@ -37,13 +37,10 @@
 .menu nav ul li a:hover {
   border-bottom: 3px solid #2ec1ac;
 }
-.menu nav ul li#btn-play a:hover {
+.menu nav ul li.btnplay a:hover {
   background: #38a999;
   transition: 0.3s;
-}
-.menu a.active {
-  color: #2ec1ac;
-  border-bottom: 3px solid #2ec1ac;
+  border-bottom: 0;
 }
 
 /* HOME */
