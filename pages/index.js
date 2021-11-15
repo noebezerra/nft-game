@@ -95,6 +95,7 @@ export default function Home() {
                 className="link"
                 href="https://pancakeswap.finance/"
                 target="_blank"
+                rel="noreferrer"
               >
                 PancakeSwap
               </a>{" "}
